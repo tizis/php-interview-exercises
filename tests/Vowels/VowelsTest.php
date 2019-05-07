@@ -12,7 +12,7 @@ final class VowelsTest extends TestCase
 {
     public function testHasCount(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertTrue(
             method_exists(Vowels::class, 'count'),
             'Class does not have static method count'
@@ -21,25 +21,25 @@ final class VowelsTest extends TestCase
 
     public function testCanCount(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertSame(5, Vowels::count('abcdefghijklmnopqrstuvwxyz'));
     }
 
     public function testCanCountAllUpper(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertSame(5, Vowels::count('AEIOU'));
     }
 
     public function testCanCountOnly(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertSame(5, Vowels::count('aeiou'));
     }
 
     public function testCanCountNone(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertSame(0, Vowels::count('bcdfghjkl'));
     }
 }
