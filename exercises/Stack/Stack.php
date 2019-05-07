@@ -20,4 +20,26 @@ namespace Exercises\Stack;
  */
 final class Stack
 {
+    private $stack = [];
+
+    public function push($value):void
+    {
+        $this->stack[] = $value;
+    }
+
+    public function pop()
+    {
+        if (!empty($this->stack)) {
+            return array_pop($this->stack);
+        }
+        return null;
+    }
+
+    public function peek()
+    {
+        if (!empty($this->stack)) {
+            return end($this->stack);
+        }
+        return null;
+    }
 }
