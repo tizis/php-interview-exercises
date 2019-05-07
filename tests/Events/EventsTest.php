@@ -35,7 +35,7 @@ final class EventsTest extends TestCase
 
     public function testOnAndFire(): void
     {
-        self::markTestSkipped();
+ //       self::markTestSkipped();
         $counter = 0;
         $events = new Events();
 
@@ -51,7 +51,7 @@ final class EventsTest extends TestCase
 
     public function testOnAndFireMultipleCallbacks(): void
     {
-        self::markTestSkipped();
+     //   self::markTestSkipped();
         $counter = 0;
         $events = new Events();
         $callback1 = static function () use (&$counter): void {
@@ -70,7 +70,7 @@ final class EventsTest extends TestCase
 
     public function testOnAndFireMultipleTimes(): void
     {
-        self::markTestSkipped();
+  //      self::markTestSkipped();
         $counter = 0;
         $events = new Events();
         $callback1 = static function () use (&$counter): void {
@@ -91,7 +91,7 @@ final class EventsTest extends TestCase
 
     public function testOnAndFireWithDifferentNames(): void
     {
-        self::markTestSkipped();
+    //    self::markTestSkipped();
         $counter = 0;
         $events = new Events();
         $callback1 = static function () use (&$counter): void {
@@ -113,7 +113,7 @@ final class EventsTest extends TestCase
 
     public function testOff(): void
     {
-        self::markTestSkipped();
+   //     self::markTestSkipped();
         $counter = 0;
         $events = new Events();
         $callback1 = static function () use (&$counter): void {
