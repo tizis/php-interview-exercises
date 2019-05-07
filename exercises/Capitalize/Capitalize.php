@@ -13,4 +13,12 @@ namespace Exercises\Capitalize;
  */
 final class Capitalize
 {
+    /**
+     * @param string $string
+     * @return string
+     */
+    public static function get(string $string): string
+    {
+        return ucwords($string);
+    }
 }
