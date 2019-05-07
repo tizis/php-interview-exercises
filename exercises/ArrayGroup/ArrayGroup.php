@@ -15,6 +15,11 @@ namespace Exercises\ArrayGroup;
  */
 final class ArrayGroup
 {
+    /**
+     * @param array $array
+     * @param int $size
+     * @return array
+     */
     public static function group(array $array, int $size):array {
         return array_chunk($array, $size);
     }
