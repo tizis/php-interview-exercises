@@ -12,7 +12,7 @@ final class AnagramTest extends TestCase
 {
     public function testHasCheck(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertTrue(
             method_exists(Anagram::class, 'check'),
             'Class does not have static method check'
@@ -21,19 +21,19 @@ final class AnagramTest extends TestCase
 
     public function testCanCheckString1(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertTrue(Anagram::check('rail safety', 'fairy tales'));
     }
 
     public function testCanCheckString2(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertTrue(Anagram::check('Elvis', 'lives'));
     }
 
     public function testCanCheckString3(): void
     {
-        self::markTestSkipped();
+        //self::markTestSkipped();
         self::assertFalse(Anagram::check('roast beef', 'goat roast'));
     }
 }
