@@ -27,7 +27,7 @@ final class PalindromeTest extends TestCase
 
     public function testFafSpaceIsNotAPalindrome(): void
     {
-        self::markTestSkipped();
+      //  self::markTestSkipped();
         self::assertFalse(Palindrome::check('faf '));
     }
 
@@ -51,7 +51,7 @@ final class PalindromeTest extends TestCase
 
     public function testDogSpaceGodIsNotAPalindrome(): void
     {
-        self::markTestSkipped();
+    //    self::markTestSkipped();
         self::assertFalse(Palindrome::check('Dog god'));
     }
 
