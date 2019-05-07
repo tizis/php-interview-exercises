@@ -15,4 +15,7 @@ namespace Exercises\ArrayGroup;
  */
 final class ArrayGroup
 {
+    public static function group(array $array, int $size):array {
+        return array_chunk($array, $size);
+    }
 }
