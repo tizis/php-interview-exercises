@@ -12,7 +12,7 @@ final class FizzBuzzTest extends TestCase
 {
     public function testHasPrint(): void
     {
-        self::markTestSkipped();
+   //     self::markTestSkipped();
         self::assertTrue(
             method_exists(FizzBuzz::class, 'print'),
             'Class does not have static method print'
@@ -21,7 +21,7 @@ final class FizzBuzzTest extends TestCase
 
     public function testGetSingleMaxChar(): void
     {
-        self::markTestSkipped();
+      //  self::markTestSkipped();
         $this->expectOutputString('12fizz4buzzfizz78fizzbuzz11fizz1314fizzbuzz');
         FizzBuzz::print(15);
     }
