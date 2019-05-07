@@ -14,4 +14,14 @@ namespace Exercises\Palindrome;
  */
 final class Palindrome
 {
+    /**
+     * @param string $string
+     * @return bool
+     */
+    public static function check(string $string):bool {
+        $originalString = str_split($string);
+        $reverseString = array_reverse($originalString);
+        // linear array differences
+        return empty(array_diff_assoc($originalString, $reverseString));
+    }
 }
