@@ -13,4 +13,28 @@ namespace Exercises\MaxSubArraySum;
  */
 final class MaxSubArraySum
 {
+    public static function max(array $input, int $n): int
+    {
+        $sum = 0;
+        $input = self::sortInput($input);
+
+        if (count($input) >= $n) {
+            for ($i = 0; $i < $n; $i++) {
+                var_dump($input);
+                $sum += array_pop($input);
+            }
+        }
+
+        return $sum;
+    }
+
+    /**
+     * @param $input
+     * @return array
+     */
+    private static function sortInput(array $input): array
+    {
+        asort($input);
+        return $input;
+    }
 }
