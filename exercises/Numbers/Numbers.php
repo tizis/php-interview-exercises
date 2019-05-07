@@ -10,4 +10,18 @@ namespace Exercises\Numbers;
  */
 final class Numbers
 {
+    /**
+     * @param int $n
+     * @return int
+     */
+    public static function add(int $n):int
+    {
+        $result = 0;
+
+        for ($i = 1; $i <= $n; $i++) {
+            $result += $i;
+        }
+
+        return $result;
+    }
 }

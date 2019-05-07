@@ -12,7 +12,7 @@ final class NumbersTest extends TestCase
 {
     public function testHasMethods(): void
     {
-        self::markTestSkipped();
+   //     self::markTestSkipped();
         self::assertTrue(
             method_exists(Numbers::class, 'add'),
             'Class does not have static method add'
@@ -21,7 +21,7 @@ final class NumbersTest extends TestCase
 
     public function testAdd(): void
     {
-        self::markTestSkipped();
+      //  self::markTestSkipped();
         self::assertSame(6, Numbers::add(3));
     }
 }
